@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="container">
+			<h1>Job Application</h1>
+			<p>Please enter your information below to apply for a job with us.</p>
+			<p class="red">* Required</p>
+			<table>
+				<tr>
+					<h2>Name</h2>
+					<g:TextBox ui:field="nameBox"/>
+				</tr>
+				<tr>
+					<h2>Gender</h2>
+					<g:RadioButton ui:field="maleButton" ui:name="gender">Male</g:RadioButton><br/>
+					<g:RadioButton ui:field="femaleButton" ui:name="gender">Female</g:RadioButton>
+				</tr>
+				<tr>
+					<h2>Email</h2>
+					<g:TextBox ui:field="emailBox"/>
+				</tr>
+				<tr>
+					<h2>Phone Number</h2>
+					<g:TextBox ui:field="phoneBox"/>
+				</tr>
+				<tr>
+					<h2>Which position(s) are you interested in?</h2>
+					<g:CheckBox ui:field="devBox"/><br/>
+					<g:CheckBox ui:field="uiBox"/><br/>
+					<g:CheckBox ui:field="mktBox"/><br/>
+					<g:CheckBox ui:field="busBox"/>
+				</tr>
+			</table>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>
