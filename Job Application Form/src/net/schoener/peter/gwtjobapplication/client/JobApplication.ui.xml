@@ -29,10 +29,27 @@
 				</tr>
 				<tr>
 					<h2>Which position(s) are you interested in?</h2>
-					<g:CheckBox ui:field="devBox"/><br/>
-					<g:CheckBox ui:field="uiBox"/><br/>
-					<g:CheckBox ui:field="mktBox"/><br/>
-					<g:CheckBox ui:field="busBox"/>
+					<g:CheckBox ui:field="devBox">Java Developer</g:CheckBox><br/>
+					<g:CheckBox ui:field="uiBox">UI Designer</g:CheckBox><br/>
+					<g:CheckBox ui:field="mktBox">Marketing</g:CheckBox><br/>
+					<g:CheckBox ui:field="busBox">Business Analyst</g:CheckBox>
+				</tr>
+				<tr>
+				    <h2>Highest Degree</h2>
+				    <g:ListBox ui:field="degreeBox">
+				        <g:item value='1'>none</g:item>
+				        <g:item value='2'>High School Diploma</g:item>
+				        <g:item value='3'>Master's Degree</g:item>
+				        <g:item value='4'>Bachelor's Degree</g:item>
+				        <g:item value='5'>PhD</g:item>
+				    </g:ListBox>
+				</tr>
+				<tr>
+				    <h2>Submit your cover letter or résumé</h2>
+				    <g:TextArea ui:field="resumeBox"/>
+				</tr>
+				<tr>
+				    <g:Button ui:field="submitButton">Submit</g:Button>
 				</tr>
 			</table>
 		</div>
